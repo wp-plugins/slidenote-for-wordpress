@@ -1,0 +1,28 @@
+/*
+ * SlideNote Widget For WordPress
+ * A WordPress widget for displaying flexible, customizable sliding notifications.
+ *
+ * Copyright 2010 Tom McFarlin, http://tommcfarlin.com
+ * More information: http://slidenote.info
+ *
+ * SlideNote is released under the MIT License
+ * SlideNote Widget For WordPress is GPL2
+*/
+
+/*--------------------------------------------------------------*
+ * These styles are used to provide the look and feel of the
+ * actual widget. Feel free to edit any of these to your liking.
+ *
+ * Note: Certain selectors are prefixed with element type because 
+ *			 Wordpress wraps the widget in a container element having 
+ *			 the same classname.
+ *--------------------------------------------------------------*/
+ 
+div.wp-slidenote { width: 540px; height: 140px; background: #FBEC78; padding: 1em; color: #000; font-family: Arial, Sans-serif !important;
+									-moz-box-shadow: -0.2em -0.2em 0.7em #333; -webkit-box-shadow: -0.2em -0.2em 0.7em #333;  position: relative; z-index: 1; }
+.wp-slidenote img { margin-left: -1.95em; margin-top: -1.95em; position: relative; z-index: 2; }
+.wp-slidenote .slidenote_image_left { margin-right: -1.95em !important; }
+.wp-slidenote img:hover { margin-top: -2em; }
+div.wp-slidenote h2 { padding: 0.5em; font-weight: bold; font-size: 2em; }
+div.wp-slidenote p { padding: 1em; font-size: 1.25em; }
+
