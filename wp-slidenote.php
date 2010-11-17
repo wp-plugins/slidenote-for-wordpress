@@ -41,9 +41,9 @@ class SlideNote_Widget extends WP_Widget {
 		);
 		$this->WP_Widget('slidenote_widget', 'SlideNote', $widget_ops);
 		if(!is_admin()):
-			wp_enqueue_style('wp-slidenote', WP_PLUGIN_URL . '/wp-slidenote/css/slidenote.widget.css');
+			wp_enqueue_style('wp-slidenote', WP_PLUGIN_URL . '/slidenote-for-wordpress/css/slidenote.widget.css');
 			wp_enqueue_script("jquery");
-			wp_enqueue_script('jquery.slidenote', WP_PLUGIN_URL . '/wp-slidenote/javascript/jquery.slidenote.min.js');
+			wp_enqueue_script('jquery.slidenote', WP_PLUGIN_URL . '/slidenote-for-wordpress/javascript/jquery.slidenote.min.js');
 		endif;
 	} // end constructor
 	
@@ -64,7 +64,7 @@ class SlideNote_Widget extends WP_Widget {
 		$content = empty($instance['contentText']) ? '&nbsp;' : apply_filters('widget_contentText', $instance['contentText']);
 		
 		?>
-		<script type="text/javascript" src="<?php echo WP_PLUGIN_URL . '/wp-slidenote/javascript/slidenote.widget.js'?>?closeImage=<?php if($closeImage == 'on'): echo WP_PLUGIN_URL . '/wp-slidenote/images/slidenote.close.png'; endif; ?>&where=<?php echo $where; ?>&corner=<?php echo strtolower($corner); ?>"></script>
+		<script type="text/javascript" src="<?php echo WP_PLUGIN_URL . '/slidenote-for-wordpress/javascript/slidenote.widget.js'?>?closeImage=<?php if($closeImage == 'on'): echo WP_PLUGIN_URL . '/slidenote-for-wordpress/images/slidenote.close.png'; endif; ?>&where=<?php echo $where; ?>&corner=<?php echo strtolower($corner); ?>"></script>
 		<div class="wp-slidenote">
 			<h2>
 				<?php echo $headerText; ?>
@@ -177,7 +177,7 @@ function slidenote_func($atts) {
 		$atts)
 	);
 	
-	$str = '<script type="text/javascript" src="' . WP_PLUGIN_URL . '/wp-slidenote/javascript/slidenote.widget.js?closeImage=' . $closeImage . '&where=' . $where . '&corner=' . $corner . '"></script>';
+	$str = '<script type="text/javascript" src="' . WP_PLUGIN_URL . '/slidenote-for-wordpress/javascript/slidenote.widget.js?closeImage=' . $closeImage . '&where=' . $where . '&corner=' . $corner . '"></script>';
 	$str .= '<div class="wp-slidenote"><' . $titleelement . '>' . $title . '</'. $titleelement . '><' . $contentelement . '>' . $content . '</' . $contentelement . '></div>';
 	
 	return $str;
