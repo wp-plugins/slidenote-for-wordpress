@@ -86,5 +86,8 @@ only one or the other.
 
 == Changelog ==
 
+= 1.1 =
+* Fixing a bug for the closeImage property in the shortcode
+
 = 1.0 =
 * Initial release
