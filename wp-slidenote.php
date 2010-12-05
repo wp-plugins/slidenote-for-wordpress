@@ -3,7 +3,7 @@
 Plugin Name: SlideNote For WordPress
 Plugin URI: http://slidenote.info
 Description: A plugin for displaying sliding notifications on your WordPress site with both a widget and shortcode. Built on top of jQuery's SlideNote plugin.
-Version: 1.1
+Version: 1.2
 Author: Tom McFarlin
 Author URI: http://tommcfarlin.com
 License: GPL2
