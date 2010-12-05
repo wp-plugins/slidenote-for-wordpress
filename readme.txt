@@ -4,7 +4,7 @@ Donate link: http://slidenote.info/
 Tags: javascript, jquery, notifications, effects
 Requires at least: 3.0
 Tested up to: 3.0.1
-Stable tag: 1.1
+Stable tag: 1.2
 
 SlideNote For WordPress is a widget for displaying flexible, customizable sliding notifications.
 
