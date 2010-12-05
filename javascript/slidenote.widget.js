@@ -12,7 +12,7 @@ jQuery(function($) {
 	
 	var sCloseImageUrl, iWhere, sCorner;
 	$('script').each(function() {
-		if($(this).attr('src').indexOf('slidenote.widget.js') !== -1) {
+		if($(this).attr('src') !== undefined && $(this).attr('src').indexOf('slidenote.widget.js') !== -1) {
 			var aParameters = $(this).attr('src').split('?')[1].split('&');
 			sCloseImageUrl = aParameters[0].split('=')[1];
 			iWhere = aParameters[1].split('=')[1];

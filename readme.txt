@@ -86,6 +86,9 @@ only one or the other.
 
 == Changelog ==
 
+= 1.2 =
+* Updated the JavaSource for properly evaluating script attributes
+
 = 1.1 =
 * Fixing a bug for the closeImage property in the shortcode
 
